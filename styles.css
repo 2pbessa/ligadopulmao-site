@@ -1,5 +1,12 @@
 :root {
     --azul_marinho: #294D6F;
+    --azul_claro: #2C90C4;
+    --laranja: #EF9547;
+    --laranja_avermelhado: #CF654B;
+    --off_white: #FFFAFA;
+
+    --fundo_azul_suave: #E3F1F9;
+    --fundo_laranja_suave: #FCEBDA;
 }
 
 * {
@@ -13,10 +20,38 @@ li {
 }
 
 header {
-    background-color: #d3d3d3;
+    background-color: var(--off_white);
+    border-bottom: 4px solid var(--laranja);
 }
 
 header img {
     width: 250px;
     height: auto;
+}
+
+.secao {
+    min-height: 350px;
+}
+
+#hero {
+    background-color: var(--azul_marinho);
+    min-height: 500px;
+}
+
+#videos {
+    background-color: var(--fundo_azul_suave);
+}
+
+#sobre {
+    background-color: var(--fundo_laranja_suave);
+}
+
+#faq {
+    background-color: var(--off_white);
+    border-top: 4px solid var(--azul_claro);
+}
+
+footer {
+    background-color: var(--azul_marinho);
+    min-height: 150px;
 }
