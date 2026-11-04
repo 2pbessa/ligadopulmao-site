@@ -3,22 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Site LPF</title>
 </head>
 <body>
     <header>
-        <img src="midias/Logo.svg" alt="Logo Liga do Pulmão">
-        <nav></nav>
+        <a href="#hero" class="logo">
+            <span class="logo_laranja">Liga do Pulmão</span>
+            <span class="logo_azul">da Fisioterapia</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#faq">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="secao" id="hero"></section>
+        <div class="primeira_tela">
+            <section class="secao" id="hero">
+                <div class="hero_texto">
+                    <h1>Respire fundo,<br>viva melhor.</h1>
+                    <p>Assista aos vídeos de exercícios e conteúdos educativos da Liga do Pulmão onde e quando quiser. Cuide da sua respiração no conforto de casa.</p>
+                    <a href="#videos" class="botao">Conheça os vídeos</a>
+                </div>
+
+                <img src="midias/Logo.svg" alt="" class="hero_imagem">
+            </section>
+            <div class="fita" aria-hidden="true"></div>
+        </div> 
+
         <section class="secao" id="videos"></section>
         <section class="secao" id="sobre"></section>
         <section class="secao" id="faq"></section>
     </main>
 
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>
