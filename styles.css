@@ -62,6 +62,7 @@ header.com_borda {
 
 .logo span {
     display: block;
+    white-space: nowrap;
 }
 
 .logo_laranja {
@@ -181,4 +182,124 @@ nav a {
 footer {
     background-color: var(--azul_marinho);
     min-height: 150px;
+}
+
+.menu_botao {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    :root {
+        --altura_header: 84px;
+    }
+
+    header {
+        padding: 0 6%;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .menu_botao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu_botao span {
+        display: block;
+        height: 3px;
+        background-color: var(--texto);
+        border-radius: 2px;
+        transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .menu_botao[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu_botao[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu_botao[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--off_white);
+        border-top: 1px solid var(--linha);
+        border-bottom: 1px solid var(--linha);
+    }
+
+    nav.aberto {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        padding: 0;
+    }
+
+    nav li + li {
+        border-left: none;
+        border-top: 1px solid var(--linha);
+    }
+
+    nav a {
+        display: block;
+        padding: 18px 6%;
+    }
+
+    #hero {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px 8% 48px;
+    }
+
+    .hero_imagem {
+        order: -1;
+        width: 300px;
+    }
+
+    .hero_texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero_texto h1 {
+        font-size: clamp(1.75rem, 8.5vw, 3rem);
+    }
+
+    .hero_texto p {
+        font-size: 1.15rem;
+    }
+
+    .fita {
+        height: calc(5vw + 20px);
+        background-size: 50% auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .fita {
+        height: calc(10vw + 20px);
+        background-size: 100% auto;
+    }
 }
