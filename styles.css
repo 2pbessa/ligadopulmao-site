@@ -241,8 +241,8 @@ footer {
         left: 0;
         right: 0;
         background-color: var(--off_white);
-        border-top: 1px solid var(--linha);
-        border-bottom: 1px solid var(--linha);
+        border-top: 1px solid var(--linha_header);
+        border-bottom: 1px solid var(--linha_header);
     }
 
     nav.aberto {
@@ -259,7 +259,7 @@ footer {
 
     nav li + li {
         border-left: none;
-        border-top: 1px solid var(--linha);
+        border-top: 1px solid var(--linha_header);
     }
 
     nav a {
