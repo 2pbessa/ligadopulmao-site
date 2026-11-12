@@ -721,3 +721,94 @@ footer {
         text-align: center;
     }
 }
+
+/* sobre e faq */
+
+#sobre,
+#faq {
+    padding: 60px 10% 80px;
+}
+
+#sobre h2,
+#faq h2 {
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+    color: var(--azul_marinho);
+}
+
+#sobre p {
+    max-width: 70ch;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.faq_lista {
+    max-width: 900px;
+}
+
+.faq_item + .faq_item {
+    border-top: 1px solid var(--linha_header);
+}
+
+.faq_item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--azul_marinho);
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq_item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq_item summary::after {
+    content: "";
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-right: 3px solid var(--azul_marinho);
+    border-bottom: 3px solid var(--azul_marinho);
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+}
+
+.faq_item[open] summary::after {
+    margin-top: 5px;
+    transform: rotate(-135deg);
+}
+
+.faq_item p {
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.faq_item summary:focus-visible {
+    outline: 3px solid var(--azul_marinho);
+    outline-offset: 2px;
+}
+
+@media (max-width: 960px) {
+    #sobre,
+    #faq {
+        padding: 40px 6% 56px;
+        text-align: center;
+    }
+
+    #sobre p {
+        margin: 0 auto;
+    }
+
+    /* Perguntas e respostas ficam à esquerda (setas ao lado), só o título é centralizado */
+    .faq_item {
+        text-align: left;
+    }
+
+}
