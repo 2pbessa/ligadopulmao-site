@@ -636,7 +636,7 @@ footer {
 
 /* FOOTER */
 .footer {
-    background-color: #183F42;
+    background-color: var(--azul_marinho);
     color: white;
     padding: 55px 8% 20px;
 }
@@ -661,11 +661,11 @@ footer {
 }
 
 .footer-brand h2 span {
-    color: #80C9B5;
+    color: var(--laranja);
 }
 
 .footer-brand p {
-    color: #D0E0DD;
+    color: var(--fundo_azul_suave);
     line-height: 1.6;
 }
 
@@ -683,13 +683,13 @@ footer {
 }
 
 .footer a {
-    color: #D0E0DD;
+    color: var(--fundo_azul_suave);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .footer a:hover {
-    color: #80C9B5;
+    color: var(--laranja);
     transform: translateX(4px);
 }
 
@@ -706,7 +706,7 @@ footer {
 
 .footer-bottom p {
     font-size: 13px;
-    color: #B8CECA;
+    color: var(--fundo_azul_suave);
 }
 
 /* RESPONSIVIDADE */
