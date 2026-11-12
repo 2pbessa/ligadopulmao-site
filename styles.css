@@ -632,3 +632,92 @@ footer {
         border-top: 2px solid var(--linha_header);
     }
 }
+
+
+/* FOOTER */
+.footer {
+    background-color: #183F42;
+    color: white;
+    padding: 55px 8% 20px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+/* IDENTIDADE */
+.footer-brand {
+    max-width: 280px;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-brand h2 span {
+    color: #80C9B5;
+}
+
+.footer-brand p {
+    color: #D0E0DD;
+    line-height: 1.6;
+}
+
+/* LINKS */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.footer a {
+    color: #D0E0DD;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #80C9B5;
+    transform: translateX(4px);
+}
+
+/* PARTE INFERIOR */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #B8CECA;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
