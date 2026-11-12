@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Site LPF</title>
 </head>
@@ -45,12 +45,24 @@
             <div class="fita" aria-hidden="true"></div>
         </div> 
 
-        <section class="secao" id="videos"></section>
+        <section class="secao" id="videos">
+            <h2>Vídeos</h2>
+
+            <div class="videos_filtros" role="group" aria-label="Categorias de vídeos">
+                <button class="videos_filtro" data-categoria="todos" aria-pressed="true">Todos os vídeos</button>
+                <button class="videos_filtro" data-categoria="exercicios" aria-pressed="false">Exercícios</button>
+                <button class="videos_filtro" data-categoria="educacao" aria-pressed="false">Educacionais</button>
+            </div>
+
+            <div class="videos_lista" id="videos_lista" aria-live="polite"></div>
+        </section>
+
         <section class="secao" id="sobre"></section>
         <section class="secao" id="faq"></section>
     </main>
 
     <footer></footer>
+    <script src="videos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

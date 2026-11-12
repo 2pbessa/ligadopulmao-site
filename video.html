@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vídeo - Site LPF</title>
+</head>
+<body>
+    <header>
+        <a href="index.html#hero" class="logo">
+            <span class="logo_laranja">Liga do Pulmão</span>
+            <span class="logo_azul">da Fisioterapia</span>
+        </a>
+
+        <button class="menu_botao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html#videos">Vídeos</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="index.html#faq">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina_video">
+        <div class="pagina_video_grade">
+            <div class="video_principal">
+                <a href="index.html#videos" class="voltar_link">Voltar para todos os vídeos</a>
+
+                <div class="video_player" id="video_player"></div>
+
+                <h1 id="video_titulo"></h1>
+                <p id="video_descricao"></p>
+            </div>
+
+            <aside class="assista_tambem" aria-labelledby="assista_tambem_titulo">
+                <h2 id="assista_tambem_titulo">Assista também</h2>
+                <div class="sugestoes" id="video_sugestoes"></div>
+                <a href="index.html#videos" class="ver_todos_link">Ver todos os vídeos</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer></footer>
+    <!-- videos.js precisa vir ANTES do script.js -->
+    <script src="videos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
