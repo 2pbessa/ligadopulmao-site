@@ -12,9 +12,9 @@
 const videos = [
     {
         categoria: "exercicios",
-        titulo: "Video 1",
-        descricao: "",
-        youtube: "",
+        titulo: "Alongamento de Panturrilha",
+        descricao: "Alongamento simples feito na parede.",
+        youtube: "kc2glDjeNfQ",
     },
     {
         categoria: "exercicios",
