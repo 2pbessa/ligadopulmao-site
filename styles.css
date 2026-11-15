@@ -45,8 +45,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s;
+    border-bottom: 1px solid var(--linha_header);
 }
 
 header.com_borda {
@@ -54,6 +53,8 @@ header.com_borda {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-family: var(--fonte_titulo);
     font-size: 1.5rem;
     font-weight: bold;
@@ -64,6 +65,21 @@ header.com_borda {
 .logo span {
     display: block;
     white-space: nowrap;
+}
+
+.logo_imagem {
+    width: 0;
+    height: 80px;
+    margin-right: 0;
+    opacity: 0;
+    object-fit: contain;
+    transition: width 0.3s, margin-right 0.3s, opacity 0.3s;
+}
+
+header.logo_visivel .logo_imagem {
+    width: 80px;
+    margin-right: 14px;
+    opacity: 1;
 }
 
 .logo_laranja {
@@ -175,11 +191,12 @@ nav a {
 }
 
 #sobre {
-    background-color: var(--fundo_laranja_suave);
+    background-color: var(--off_white);
+    border-top: 4px solid var(--azul_claro);
 }
 
 #faq {
-    background-color: var(--off_white);
+    background-color: var(--fundo_azul_suave);
     border-top: 4px solid var(--azul_claro);
 }
 
@@ -204,6 +221,15 @@ footer {
 
     .logo {
         font-size: 1.25rem;
+    }
+
+    .logo_imagem {
+        height: 64px;
+    }
+
+    header.logo_visivel .logo_imagem {
+        width: 64px;
+        margin-right: 10px;
     }
 
     .menu_botao {
@@ -661,7 +687,7 @@ footer {
 }
 
 .footer-brand h2 span {
-    color: var(--laranja);
+    color: var(--laranja_escuro);
 }
 
 .footer-brand p {
@@ -729,7 +755,12 @@ footer {
     padding: 60px 10% 80px;
 }
 
-#sobre h2,
+#sobre h2 {
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+    color: var(--texto);
+}
+
 #faq h2 {
     margin-bottom: 24px;
     font-size: 2.2rem;
@@ -811,4 +842,8 @@ footer {
         text-align: left;
     }
 
+}
+
+.secao h2 {
+    font-family: var(--fonte_titulo);
 }

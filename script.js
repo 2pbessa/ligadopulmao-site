@@ -1,8 +1,9 @@
 const header = document.querySelector('header');
+const rolagem_para_logo = 250;
 
-// isso faz a borda do cabeçalho aparecer só depois de rolar a página
+// isso faz a logo aparecer no header só depois de rolar a página
 function atualizarHeader() {
-    header.classList.toggle('com_borda', window.scrollY > 0);
+    header.classList.toggle('logo_visivel', window.scrollY > rolagem_para_logo);
 }
 
 window.addEventListener('scroll', atualizarHeader);
